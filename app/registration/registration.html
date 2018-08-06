@@ -1,0 +1,20 @@
+<div>
+	<span ng-if="message">{{message}}</span><br>
+	First Name: <input type="text" ng-blur="validateFirstname()" ng-model="registration.firstName"><br>
+	<span style="color:red" ng-if="errors.firstName">{{errors.firstName}}</span><br>
+	Last Name: <input type="text" ng-model="registration.lastName"><br>
+	Email: <input type="text" ng-model="registration.email"><br>
+	Phone: <input type="text" ng-model="registration.phone"><br>
+	Permanent adress:
+	<br>
+	House no: <input type="text" ng-model="registration.permanentAddress.hno"><br>
+	Dist: <input type="text" ng-model="registration.permanentAddress.dist"><br>
+	Temp adress:
+	<br>
+	House no: <input type="text" ng-model="registration.tempAddress.dist"><br>
+	Dist: <input type="text"  ng-model="registration.tempAddress.dist"><br>
+	
+	<br>
+	<button type="button" ng-click="submit()">Submit</button>
+
+</div>
